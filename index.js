@@ -1,5 +1,4 @@
-/*
- * 1.
+/*1.
  * Connect JS file to HTML
  *
  */
@@ -16,7 +15,7 @@ const h2Collection = document.getElementsByTagName("h2");
 
 //Adding class for making text lightblue
 for (let singleh2 of h2Collection) {
-  singleh2.classList.add("text-color-lightblue");
+	singleh2.classList.add("text-color-lightblue");
 }
 
 /* 3.
@@ -43,5 +42,23 @@ const cardCollection = document.getElementsByClassName("card");
 
 //Adding class for border radius 30px
 for (let singleCard of cardCollection) {
-  //singleCard.classList.add("border-radius-30px");
+	singleCard.classList.add("border-radius-30px");
 }
+
+/* 5. 
+ * Write a function 
+ * which console.log 
+ * something onclick 
+ * a button 
+ *
+ */
+
+//Writing that function  
+function clickResponse() {
+	console.log("Button was clicked");
+}
+
+//Now by clicking the 
+// "Buy Now" button 
+// will trigger this 
+// clickResponse fuction 
