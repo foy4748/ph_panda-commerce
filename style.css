@@ -68,3 +68,16 @@ footer a:visited {
 .text-justify {
   text-align: justify;
 }
+
+/* 
+ * Classes to 
+ * add by JavaScript 
+ *
+ */
+.text-color-lightblue {
+  color: lightblue;
+}
+
+.border-radius-30px {
+  border-radius: 30px;
+}
