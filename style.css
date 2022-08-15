@@ -69,6 +69,16 @@ footer a:visited {
   text-align: justify;
 }
 
+/*
+ * Decreasing carousel 
+ * next/previous button 
+ * narrower
+ */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%;
+}
+
 /* 
  * Classes to 
  * add by JavaScript 
