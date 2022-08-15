@@ -30,6 +30,17 @@ body {
   filter: brightness(65%);
 }
 
+/*
+ * Fixing Category Images
+ */
+.category-img {
+  min-width: 155px;
+  max-width: 155px;
+
+  min-height: 155px;
+  max-height: 155px;
+}
+
 /* Customizing COLOR 
  * -------------------------*/
 .carousel-item {
@@ -59,6 +70,7 @@ body {
  * End of Customizing SPACING */
 
 /* Miscellenious ------------ */
+
 /* Getting Rid of Visited Link default style */
 footer a:visited {
   color: white;
@@ -67,4 +79,44 @@ footer a:visited {
 /* Justify Text */
 .text-justify {
   text-align: justify;
+}
+
+/*
+ * Decreasing carousel 
+ * next/previous button 
+ * narrower
+ */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%;
+}
+
+/* Preventing Selection 
+ * For Double Clicking
+ *
+ */
+#subscribe-section {
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+/* 
+ * Classes to 
+ * add by JavaScript 
+ *
+ */
+.text-color-lightblue {
+  color: lightblue;
+}
+
+.border-radius-30px {
+  border-radius: 30px;
+}
+
+.changeBg {
+  background-color: tomato;
+  color: white;
 }

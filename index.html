@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Panda Commerce | Home</title>
   </head>
+
   <body>
     <!-- HEADER/Navbar SECTION -->
     <header>
@@ -33,16 +34,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Shoes</a>
+                <a class="nav-link" aria-current="page" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Backpacks</a>
+                <a class="nav-link" aria-current="page" href="#backpack"
+                  >Backpacks</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Subscribe</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#subscribe-section"
+                  >Subscribe</a
+                >
               </li>
             </ul>
           </div>
@@ -69,7 +77,9 @@
                       excepturi pariatur sit obcaecati aperiam.
                     </p>
                     <h2>$420</h2>
-                    <button class="btn-warning">Buy Now</button>
+                    <button class="btn-warning" onclick="clickResponse()">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
                 <div class="col-md-7">
@@ -92,7 +102,9 @@
                       excepturi pariatur sit obcaecati aperiam.
                     </p>
                     <h2>$420</h2>
-                    <button class="btn-warning">Buy Now</button>
+                    <button class="btn-warning" onclick="clickResponse()">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
                 <div class="col-md-7">
@@ -115,7 +127,9 @@
                       excepturi pariatur sit obcaecati aperiam.
                     </p>
                     <h2>$420</h2>
-                    <button class="btn-warning">Buy Now</button>
+                    <button class="btn-warning" onclick="clickResponse()">
+                      Buy Now
+                    </button>
                   </div>
                 </div>
                 <div class="col-md-7">
@@ -165,7 +179,7 @@
                 <img
                   src="./images/categories/watch.png"
                   alt=""
-                  class="img-fluid"
+                  class="category-img"
                 />
               </div>
             </div>
@@ -177,7 +191,7 @@
                 <img
                   src="./images/categories/bag.png"
                   alt=""
-                  class="img-fluid"
+                  class="category-img"
                 />
               </div>
             </div>
@@ -189,7 +203,7 @@
                 <img
                   src="./images/categories/shoes.png"
                   alt=""
-                  class="img-fluid"
+                  class="category-img"
                 />
               </div>
             </div>
@@ -199,7 +213,7 @@
       <!-- END of Categories -->
 
       <!-- Shoes Section -->
-      <section class="shoes-section section-top-margin container">
+      <section class="shoes-section section-top-margin container" id="shoes">
         <h1 class="my-5">Shoes</h1>
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4 rounded text-center">
@@ -211,7 +225,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
               </div>
             </div>
           </div>
@@ -224,7 +238,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
               </div>
             </div>
           </div>
@@ -237,7 +251,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
               </div>
             </div>
           </div>
@@ -247,8 +261,8 @@
       </section>
 
       <!-- Bags Section -->
-      <section class="shoes-section section-top-margin container">
-        <h1 class="my-5">Bagpacks</h1>
+      <section class="shoes-section section-top-margin container" id="backpack">
+        <h1 class="my-5">Back packs</h1>
         <div class="container">
           <div class="row g-3">
             <div class="col-12 col-md-6 col-lg-4 rounded text-center">
@@ -260,7 +274,7 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
                 </div>
               </div>
             </div>
@@ -273,7 +287,7 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
                 </div>
               </div>
             </div>
@@ -286,7 +300,7 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary buy-button"> Buy Now </a>
                 </div>
               </div>
             </div>
@@ -297,7 +311,11 @@
       </section>
 
       <!-- Subscribe Section -->
-      <section class="section-top-margin container border py-5">
+      <section
+        class="section-top-margin container border py-5"
+        id="subscribe-section"
+        ondblclick="changeBg()"
+      >
         <h1 class="text-center">Let's Stay in Touch</h1>
         <p class="text-center">Get updates on sales, specials and more</p>
         <form class="mt-5 d-flex justify-content-center align-items-center">
@@ -305,18 +323,21 @@
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="InputEmail"
               placeholder="Enter you Email"
               aria-describedby="emailHelp"
             />
           </div>
           <div>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" disabled id="SubmitEmailButton" class="btn">
+              Submit
+            </button>
           </div>
         </form>
       </section>
     </main>
     <!-- IMPORT Bootstrap JS -->
     <script src="./bootstrap/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
