@@ -30,6 +30,17 @@ body {
   filter: brightness(65%);
 }
 
+/*
+ * Fixing Category Images
+ */
+.category-img {
+  min-width: 155px;
+  max-width: 155px;
+
+  min-height: 155px;
+  max-height: 155px;
+}
+
 /* Customizing COLOR 
  * -------------------------*/
 .carousel-item {

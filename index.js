@@ -119,3 +119,18 @@ emailInput.addEventListener("keyup", function (e) {
     submitEmailButton.disabled = true;
   }
 });
+
+/* 8. [Optional Challenge]
+ * Change the images for "mouseenter"
+ *
+ */
+
+//Grabbing Images in the main section
+const imageCollection = main[0].getElementsByTagName("img");
+
+//Putting EventListeners
+for (let image of imageCollection) {
+  image.addEventListener("mouseenter", function (e) {
+    e.target.src = "./images/Love_Heart_SVG.svg";
+  });
+}
