@@ -63,9 +63,11 @@ function clickResponse() {
 // will trigger this
 // clickResponse fuction
 
-/* 6. Removing "Buy Now"
+/* 6.
+ * Removing "Buy Now"
  * Buttons by clicking
  * on them
+ *
  */
 
 //Grabbing sections for putting EventListeners
@@ -89,3 +91,31 @@ for (let section of sections) {
     }
   });
 }
+
+/* 7.
+ * Disable Email Input
+ * In "LET'S STAY IN TOUCH"
+ * section if input field
+ * doesn't contain "email"
+ * as input
+ *
+ */
+
+//Grabbing Email Input field
+const emailInput = document.getElementById("InputEmail");
+
+//Grabbing Email Submit Button
+const submitEmailButton = document.getElementById("SubmitEmailButton");
+
+//Putting Event Listener
+emailInput.addEventListener("keyup", function (e) {
+  let fieldValue = e.target.value; //Grabbing Field value
+  let condition = fieldValue === "email"; //Checking if it's "email"
+
+  //Altering Disabled Status
+  if (condition) {
+    submitEmailButton.disabled = false;
+  } else {
+    submitEmailButton.disabled = true;
+  }
+});
