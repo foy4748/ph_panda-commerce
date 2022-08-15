@@ -15,7 +15,7 @@ const h2Collection = document.getElementsByTagName("h2");
 
 //Adding class for making text lightblue
 for (let singleh2 of h2Collection) {
-	singleh2.classList.add("text-color-lightblue");
+  singleh2.classList.add("text-color-lightblue");
 }
 
 /* 3.
@@ -42,23 +42,50 @@ const cardCollection = document.getElementsByClassName("card");
 
 //Adding class for border radius 30px
 for (let singleCard of cardCollection) {
-	singleCard.classList.add("border-radius-30px");
+  singleCard.classList.add("border-radius-30px");
 }
 
-/* 5. 
- * Write a function 
- * which console.log 
- * something onclick 
- * a button 
+/* 5.
+ * Write a function
+ * which console.log
+ * something onclick
+ * a button
  *
  */
 
-//Writing that function  
+//Writing that function
 function clickResponse() {
-	console.log("Button was clicked");
+  console.log("Button was clicked");
 }
 
-//Now by clicking the 
-// "Buy Now" button 
-// will trigger this 
-// clickResponse fuction 
+//Now by clicking the
+// "Buy Now" button
+// will trigger this
+// clickResponse fuction
+
+/* 6. Removing "Buy Now"
+ * Buttons by clicking
+ * on them
+ */
+
+//Grabbing sections for putting EventListeners
+const main = document.getElementsByTagName("main");
+const sections = main[0].getElementsByTagName("section");
+
+for (let section of sections) {
+  //Putting eventListeners on each sections
+  section.addEventListener("click", function (e) {
+    //Checking if clicked thing is
+    //a Buy Now button
+    if (e.target.classList.contains("buy-button")) {
+      //Preventing default to prevent
+      //going next page ("#")
+      e.preventDefault();
+
+      //Grabbing the button's parent
+      const parent = e.target.parentNode;
+      //Now deleting button from it's parent
+      parent.removeChild(e.target);
+    }
+  });
+}
