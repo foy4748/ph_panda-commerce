@@ -70,6 +70,7 @@ body {
  * End of Customizing SPACING */
 
 /* Miscellenious ------------ */
+
 /* Getting Rid of Visited Link default style */
 footer a:visited {
   color: white;
@@ -90,6 +91,18 @@ footer a:visited {
   width: 3%;
 }
 
+/* Preventing Selection 
+ * For Double Clicking
+ *
+ */
+#subscribe-section {
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
 /* 
  * Classes to 
  * add by JavaScript 
@@ -101,4 +114,9 @@ footer a:visited {
 
 .border-radius-30px {
   border-radius: 30px;
+}
+
+.changeBg {
+  background-color: tomato;
+  color: white;
 }

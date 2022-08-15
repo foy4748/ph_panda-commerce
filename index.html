@@ -34,16 +34,23 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Shoes</a>
+                <a class="nav-link" aria-current="page" href="#shoes">Shoes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Backpacks</a>
+                <a class="nav-link" aria-current="page" href="#backpack"
+                  >Backpacks</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Subscribe</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="#subscribe-section"
+                  >Subscribe</a
+                >
               </li>
             </ul>
           </div>
@@ -206,7 +213,7 @@
       <!-- END of Categories -->
 
       <!-- Shoes Section -->
-      <section class="shoes-section section-top-margin container">
+      <section class="shoes-section section-top-margin container" id="shoes">
         <h1 class="my-5">Shoes</h1>
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4 rounded text-center">
@@ -304,7 +311,11 @@
       </section>
 
       <!-- Subscribe Section -->
-      <section class="section-top-margin container border py-5">
+      <section
+        class="section-top-margin container border py-5"
+        id="subscribe-section"
+        ondblclick="changeBg()"
+      >
         <h1 class="text-center">Let's Stay in Touch</h1>
         <p class="text-center">Get updates on sales, specials and more</p>
         <form class="mt-5 d-flex justify-content-center align-items-center">

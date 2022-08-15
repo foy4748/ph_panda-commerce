@@ -134,3 +134,16 @@ for (let image of imageCollection) {
     e.target.src = "./images/Love_Heart_SVG.svg";
   });
 }
+
+/* 9. [Optional Challenge]
+ * Change Background Color of
+ * "LET'S STAY IN TOUCH" section
+ * on double click
+ *
+ */
+
+function changeBg() {
+  //Grabbing the section
+  const stayInTouch = document.getElementById("subscribe-section");
+  stayInTouch.classList.toggle("changeBg");
+}
